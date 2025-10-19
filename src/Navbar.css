@@ -1,0 +1,65 @@
+.nav {
+  width: 100vw;
+  margin: 0;
+  padding: 16px 0 10px 0;
+  border-radius: 0 0 18px 18px;
+  background: linear-gradient(90deg, #f3f5ff 10%, #e6ecfa 90%);
+  box-shadow: 0 3px 14px 0 rgba(120,135,200,0.13);
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Navigation links */
+.nav a {
+  color: #5077c9;
+  background: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.13rem;
+  padding: 8px 24px;
+  border-radius: 11px;
+  transition: color 0.32s, background 0.19s, box-shadow 0.2s;
+  box-shadow: none;
+  letter-spacing: 0.015em;
+  border: 1px solid transparent;
+}
+
+.nav a:hover, 
+.nav a:focus {
+  color: #fff;
+  background: linear-gradient(90deg, #7ab7fd 10%, #637fe6 90%);
+  box-shadow: 0 2px 10px 0 rgba(120,170,250,0.17);
+  border: 1px solid #b9d3fe;
+  transform: scale(1.08) translateY(-2px);
+}
+
+/* Logout button — light variant */
+.nav button {
+  color: #fff;
+  background: linear-gradient(90deg, #7ab7fd 0%, #637fe6 100%);
+  font-size: 1.13rem;
+  font-weight: bold;
+  padding: 8px 28px;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 0 2px 13px 0 rgba(80,140,255,0.15);
+  cursor: pointer;
+  transition: background 0.16s, transform 0.11s, box-shadow 0.15s;
+  letter-spacing: 0.03em;
+  margin-left: 6px;
+}
+
+.nav button:hover {
+  background: linear-gradient(90deg, #5077c9 0%, #7ab7fd 100%);
+  box-shadow: 0 4px 18px 0 rgba(80,140,255,0.28);
+  transform: scale(1.08) translateY(-2px);
+}
+
+.nav button:active {
+  background: #5077c9;
+  transform: scale(0.99);
+}

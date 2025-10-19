@@ -1,0 +1,116 @@
+.split-container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(135deg, #181b2c 0%, #23253b 100%);
+}
+
+.signup-half {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup-container {
+  background: rgba(34, 37, 75, 0.97);
+  max-width: 360px;
+  width: 100%;
+  padding: 38px 32px 34px 32px;
+  border-radius: 22px;
+  box-shadow: 0 8px 28px rgba(10,14,50,0.32);
+  color: #ededf7;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 1s cubic-bezier(.6,-0.02,.47,1.55);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.signup-container h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 24px;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+  background: rgba(255,255,255,0.13);
+  border: 1.7px solid rgba(100,120,180,0.16);
+  border-radius: 10px;
+  color: #eaeaea;
+  font-size: 1.13rem;
+  padding: 14px 18px;
+  margin-bottom: 18px;
+  width: 100%;
+  transition: background 0.3s, box-shadow 0.2s, border 0.23s;
+  box-shadow: 0 2px 12px 0 rgba(38,40,80,0.045);
+  outline: none;
+  box-sizing: border-box;
+  display: block;
+}
+
+.signup-container input[type="email"]:focus,
+.signup-container input[type="password"]:focus {
+  background: rgba(255,255,255,0.18);
+  border: 1.7px solid #7b89fa;
+  box-shadow: 0 0 0 2px #555abfae;
+  color: #fff;
+}
+
+.signup-container button[type="submit"] {
+  width: 100%;
+  background: linear-gradient(90deg, #726bfd 0%, #56b2fa 100%);
+  color: #fff;
+  padding: 13px 0;
+  border: none;
+  border-radius: 13px;
+  font-size: 1.09rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 7px;
+  margin-bottom: 8px;
+  box-shadow: 0 5px 14px 0 rgba(72,110,255,0.12);
+  transition: background 0.22s, transform 0.11s;
+}
+
+.signup-container button[type="submit"]:hover {
+  background: linear-gradient(90deg, #5a57d6 0%, #4ba3e7 100%);
+  transform: translateY(-1px) scale(1.03);
+}
+
+.signup-container .error {
+  color: #fa5b7b;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+/* Right side styling */
+.welcome-half {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(112deg, #282c54 50%, #181b2c 100%);
+}
+
+.welcome-msg {
+  color: #ccb8ff;
+  text-align: center;
+  font-size: 2.7rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 20px rgba(110,70,240,0.18);
+  padding: 0 44px;
+}
